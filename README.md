@@ -47,3 +47,29 @@ Running the harvester
 ---------------------
 
 The WSO2 harvester runs like any other harvester, with the gather -> fetch -> import stages.  It should run as per any other harvest job.
+
+Limitations for the Data Catalogue
+----------------------------------
+
+The following limitations are only applicable to the Data Catalogue.  Other instances of CKAN will differ based on how (or if) the schema was changed.
+
+#### Missing Fields
+
+- License
+- Resource Status
+
+##### Contact Information
+
+There are multiple contact entries permitted and at least one is required.
+
+- Name
+- Email
+- Organization
+- Sub-Organization
+
+###### Access & Security
+- Security Classification
+- Has a PIA been completed?
+
+###### Resources
+- Resource Storage Format
