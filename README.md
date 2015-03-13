@@ -54,7 +54,7 @@ Limitations for the Data Catalogue
 
 The following limitations are only applicable to the Data Catalogue CKAN instance.  Other instances of CKAN will differ based on how (or if) the schema was changed.
 
-#### Missing Fields from WSO2
+### Missing Fields from WSO2
 
 - License
 - Resource Status
