@@ -56,10 +56,12 @@ The following limitations are only applicable to the Data Catalogue CKAN instanc
 
 ### Missing Fields from WSO2
 
+The following fields are not present in WSO2 and as such are not imported when the harvester runs.  These fields are marked as required in the schema and require manual updating.
+
 - License
 - Resource Status
 
-##### Contact Information
+#### Contact Information
 
 There are multiple contact entries permitted and at least one is required.
 
@@ -68,11 +70,11 @@ There are multiple contact entries permitted and at least one is required.
 - Organization
 - Sub-Organization
 
-###### Access & Security
+##### Access & Security
 
 - Security Classification
 - Has a PIA been completed?
 
-###### Resources
+##### Resources
 
 - Resource Storage Format
