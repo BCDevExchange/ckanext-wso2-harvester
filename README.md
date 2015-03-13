@@ -24,8 +24,9 @@ After installing the extension, a 'WSO2' harvester option should appear under "S
     `password`: The password for that username.
     `ckan_user`: The CKAN user the harvester will add datasets under.
 
-The following configuration options are specific to the Data Catalogue and may not be necessary for all instances:
+The following configuration options are specific to the Data Catalogue CKAN instance and may not be necessary for all instances:
 
+    `edc_state`: The state the dataset will be after import.  e.g. "DRAFT", "PENDING PUBLISH", "PUBLISHED", etc.
     `parent_org`: The parent organization/group the datasets will belong to.
     `owner_org`: The organization that the datasets will belong to.
 
@@ -37,6 +38,7 @@ An example configuration is provided here:
     "password": "wso2-admin-password",
     "parent_org": "the-parent-organization",
     "owner_org": "the-sub-org",
+    "edc_state": "PENDING PUBLISH",
     "ckan_user": "admin"
 }
 
@@ -50,9 +52,9 @@ The WSO2 harvester runs like any other harvester, with the gather -> fetch -> im
 Limitations for the Data Catalogue
 ----------------------------------
 
-The following limitations are only applicable to the Data Catalogue.  Other instances of CKAN will differ based on how (or if) the schema was changed.
+The following limitations are only applicable to the Data Catalogue CKAN instance.  Other instances of CKAN will differ based on how (or if) the schema was changed.
 
-#### Missing Fields
+#### Missing Fields from WSO2
 
 - License
 - Resource Status
@@ -67,8 +69,10 @@ There are multiple contact entries permitted and at least one is required.
 - Sub-Organization
 
 ###### Access & Security
+
 - Security Classification
 - Has a PIA been completed?
 
 ###### Resources
+
 - Resource Storage Format

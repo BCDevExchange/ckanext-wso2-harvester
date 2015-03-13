@@ -247,6 +247,7 @@ class WSO2Harvester(HarvesterBase):
             owner_org = model.Group.get(config['owner_org'])
             org = model.Group.get(config['parent_org'])
             sub_org = model.Group.get(config['owner_org'])
+            state = config('edc_state')
 
             package_dict['id'] = harvest_object.guid
             package_dict['resources'] = []
@@ -265,9 +266,16 @@ class WSO2Harvester(HarvesterBase):
 
             # EDC Fields
             package_dict['type'] = 'WebService'
-            package_dict['extras'].append({'key': 'org', 'value':org.id, 'state': 'active'})
-            package_dict['extras'].append({'key': 'edc_state', 'value': 'PUBLISHED', 'state': 'active'})
-            package_dict['extras'].append({'key': 'sub_org', 'value':sub_org.id, 'state': 'active'})
+
+            if org:
+                package_dict['extras'].append({'key': 'org', 'value':org.id, 'state': 'active'})
+
+            if sub_org:
+                package_dict['extras'].append({'key': 'sub_org', 'value':sub_org.id, 'state': 'active'})
+
+            if state:
+                package_dict['extras'].append({'key': 'edc_state', 'value': state, 'state': 'active'})
+
             package_dict['extras'].append({'key': 'metadata_visibility', 'value': 'Public', 'state': 'active'})
             package_dict['extras'].append({'key': 'view_audience', 'value': 'Public', 'state': 'active'})
             package_dict['extras'].append({'key': 'download_audience', 'value': 'Public', 'state': 'active'})
