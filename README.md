@@ -70,11 +70,11 @@ There are multiple contact entries permitted and at least one is required.
 - Organization
 - Sub-Organization
 
-##### Access & Security
+#### Access & Security
 
 - Security Classification
 - Has a PIA been completed?
 
-##### Resources
+#### Resources
 
 - Resource Storage Format
