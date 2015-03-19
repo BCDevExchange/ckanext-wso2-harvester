@@ -78,3 +78,9 @@ There are multiple contact entries permitted and at least one is required.
 #### Resources
 
 - Resource Storage Format
+
+----------
+
+###### BCDevExchange Search Tags ######
+
+BCDevExchange-Resource
