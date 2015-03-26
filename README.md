@@ -81,6 +81,7 @@ There are multiple contact entries permitted and at least one is required.
 
 - Resource Storage Format
 
+#### License
 ```
      Copyright 2015 Province of British Columbia
 
