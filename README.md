@@ -43,7 +43,6 @@ An example configuration is provided here:
     "edc_state": "PENDING PUBLISH",
     "ckan_user": "admin"
 }
-
 ```
 
 Running the harvester
@@ -87,7 +86,7 @@ There are multiple contact entries permitted and at least one is required.
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at 
+    You may obtain a copy of the License at
 
        http://www.apache.org/licenses/LICENSE-2.0
 
